@@ -139,16 +139,19 @@ body {
 }
 /*Hero*/
 .hero {
+  text-align: center;
   background-color: var(--secondary-background-color);
-  weight: 1600px;
+  width: 1600px;
   height: 600px;
+  margin-bottom: 94px;
 }
 .main-title {
+  padding-top: 200px;
+  margin-bottom: 30px;
   color: var(--color-text-white);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -170,6 +173,20 @@ body {
 }
 
 /*Наши особенности*/
+.section-features {
+  margin-bottom: 94px;
+}
+.our-features {
+  display: flex;
+}
+.our-features .list-features:not(:last-child) {
+  margin-right: 30px;
+}
+.list-features {
+  width: 270px;
+  height: 101px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -187,6 +204,7 @@ body {
   text-decoration: none;
 }
 .subtitle {
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -200,13 +218,17 @@ body {
   letter-spacing: 0.03em;
 }
 /*Чем мы занимаемся*/
-.section-title {
+. .section-title {
+  text-align: center;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+}
+.list-doing {
+  display: flex;
 }
 /*Наша команда*/
 .section-our-crew {
