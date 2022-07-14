@@ -38,14 +38,14 @@ body {
   color: var(--primary-text-color);
 }
 /*Page-Header*/
-
+.page-header {
+  border: 1px solid #ececec;
+}
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 1170px;
   display: flex;
-
-  outline: 2px solid tomato;
 }
 
 .logo {
@@ -76,9 +76,6 @@ body {
 }
 .site-nav > li > .current {
   color: var(--accent-text-color);
-}
-.top-logo {
-  border: 1px solid #ececec;
 }
 
 /*Site-nav*/
@@ -252,6 +249,9 @@ body {
 .work-card {
   background-color: var(--main-background-color);
   list-style: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .name {
@@ -328,6 +328,14 @@ ul > .link:not(:last-child) {
 }
 
 /*Portfolio*/
+.our-works {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.list-button {
+  justify-content: center;
+  margin-bottom: 50px;
+}
 .secondary-button {
   font-family: inherit;
   font-weight: 500;
@@ -340,6 +348,10 @@ ul > .link:not(:last-child) {
   border: none;
   border-radius: 4px;
 }
+.secondary-button-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .secondary-button:hover,
 .secondary-button:focus {
   background-color: var(--accent-text-color);
@@ -352,12 +364,28 @@ ul > .link:not(:last-child) {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /*Наши работы*/
+.container-works {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.work-card-item {
+  margin: 20px 24px;
+}
+.all-work-card {
+  border: 1px solid #eeeeee;
+}
+
 .work-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+  margin-bottom: 4px;
 }
 .work-description {
   font-size: 16px;
