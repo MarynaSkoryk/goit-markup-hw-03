@@ -42,9 +42,7 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 1170px;
   display: flex;
 
   outline: 2px solid tomato;
@@ -53,7 +51,9 @@ body {
 .logo {
   display: inline-block;
   min-width: 145px;
+
   text-align: center;
+  justify-content: center;
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
@@ -76,6 +76,9 @@ body {
 }
 .site-nav > li > .current {
   color: var(--accent-text-color);
+}
+.top-logo {
+  border: 1px solid #ececec;
 }
 
 /*Site-nav*/
@@ -225,22 +228,27 @@ body {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
-.list-doing {
-  display: flex;
+.doing-list .doing-list-item:not(:last-child) {
+  margin-right: 30px;
 }
+.doing-list {
+  margin-bottom: 94px;
+}
+
 /*Наша команда*/
 .section-our-crew {
   background-color: var(--third-background-color);
+  padding-bottom: 94px;
 }
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
+.our-crew-title {
+  padding-top: 94px;
 }
+.our-crew-list .work-card:not(:last-child) {
+  margin-right: 30px;
+}
+
 .work-card {
   background-color: var(--main-background-color);
   list-style: none;
@@ -252,17 +260,25 @@ body {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 .position {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 /*Footer*/
-footer {
+.all-footer {
   background-color: var(--secondary-background-color);
 }
+.footer-style {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
 .logo-footer {
+  display: block;
   color: var(--color-text-white);
   font-family: 'Raleway';
   font-style: normal;
@@ -271,6 +287,8 @@ footer {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 .logo-footer > .second-word-logo {
   color: var(--accent-text-color);
@@ -285,6 +303,14 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-style: normal;
+  padding-bottom: 9px;
+}
+ul > .link:not(:last-child) {
+  padding-bottom: 9px;
+}
+
+.link {
+  list-style: none;
 }
 .address-link {
   font-size: 14px;
@@ -297,6 +323,10 @@ footer {
 .address-link:focus {
   color: var(--accent-text-color);
 }
+.address-info {
+  padding-bottom: 60px;
+}
+
 /*Portfolio*/
 .secondary-button {
   font-family: inherit;
