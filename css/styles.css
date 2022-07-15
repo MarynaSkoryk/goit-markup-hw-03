@@ -83,7 +83,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 331px;
 }
 .site-nav {
   display: flex;
@@ -111,6 +110,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: auto;
 }
 .auth-nav {
   display: flex;
