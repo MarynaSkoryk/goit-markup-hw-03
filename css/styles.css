@@ -44,7 +44,8 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1170px;
+  width: 1200px;
+  padding: 0 15px;
   display: flex;
 }
 
@@ -101,7 +102,7 @@ body {
 .site-nav .nav-item:not(:last-child) {
   margin-right: 50px;
 }
-.site-nav .nav-item {
+.site-nav .nav-item .link {
   padding: 32px 0;
 }
 
@@ -124,7 +125,7 @@ body {
 .auth-nav .nav-item:not(:last-child) {
   margin-right: 50px;
 }
-.auth-nav .nav-item {
+.auth-nav .nav-item .link {
   padding: 32px 0;
 }
 
@@ -142,10 +143,10 @@ body {
   text-align: center;
   background-color: var(--secondary-background-color);
   height: 600px;
-  margin-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .main-title {
-  padding-top: 200px;
   margin-bottom: 30px;
   color: var(--color-text-white);
   font-weight: 900;
@@ -165,6 +166,9 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
 }
 .button:hover,
 .button:focus {
@@ -173,7 +177,8 @@ body {
 
 /*Наши особенности*/
 .section-features {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .our-features {
   display: flex;
@@ -230,19 +235,25 @@ body {
   margin-right: 30px;
 }
 .doing-list {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
+  display: flex;
 }
 
 /*Наша команда*/
 .section-our-crew {
   background-color: var(--third-background-color);
   padding-bottom: 94px;
-}
-.our-crew-title {
   padding-top: 94px;
 }
+.our-crew-list {
+  display: flex;
+}
+
 .our-crew-list .work-card:not(:last-child) {
   margin-right: 30px;
+}
+.work-card-container {
+  padding: 30px 0;
 }
 
 .work-card {
@@ -260,6 +271,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 10px;
 }
 .position {
   font-size: 16px;
@@ -275,6 +287,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
+  padding: 60px 15px;
 }
 .logo-footer {
   display: block;
@@ -331,9 +344,12 @@ ul > .link:not(:last-child) {
   margin-top: 94px;
   margin-bottom: 94px;
 }
+
 .list-button {
-  justify-content: center;
   margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 .secondary-button {
   font-family: inherit;
@@ -366,7 +382,7 @@ ul > .link:not(:last-child) {
 .container-works {
   margin-left: auto;
   margin-right: auto;
-  width: 1170px;
+  width: 1200px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
