@@ -75,7 +75,10 @@ body {
 .logo:focus {
   color: var(--accent-text-color);
 }
-.site-nav > li > .current {
+.site-nav > .nav-item > .link {
+  color: var(--title-text-color);
+}
+.site-nav > .nav-item > .current {
   color: var(--accent-text-color);
 }
 
@@ -95,6 +98,7 @@ body {
   list-style: none;
   text-decoration: none;
 }
+
 .link:hover,
 .link:focus {
   color: var(--accent-text-color);
@@ -299,8 +303,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  padding-top: 60px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .logo-footer > .second-word-logo {
   color: var(--accent-text-color);
@@ -315,10 +318,10 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-style: normal;
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 ul > .link:not(:last-child) {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .link {
@@ -335,9 +338,6 @@ ul > .link:not(:last-child) {
 .address-link:focus {
   color: var(--accent-text-color);
 }
-.address-info {
-  padding-bottom: 60px;
-}
 
 /*Portfolio*/
 .our-works {
@@ -349,7 +349,8 @@ ul > .link:not(:last-child) {
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
-  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 .secondary-button {
   font-family: inherit;
@@ -364,7 +365,7 @@ ul > .link:not(:last-child) {
   border-radius: 4px;
 }
 .secondary-button-item:not(:last-child) {
-  margin-right: 8px;
+  padding-right: 8px;
 }
 
 .secondary-button:hover,
@@ -382,13 +383,12 @@ ul > .link:not(:last-child) {
 .container-works {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 .work-card-item {
-  margin: 20px 24px;
+  padding: 20px 24px;
 }
 .all-work-card {
   border: 1px solid #eeeeee;
