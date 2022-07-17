@@ -247,6 +247,9 @@ body {
 .doing-list {
   display: flex;
 }
+.doing-list-item {
+  max-width: 370px;
+}
 
 /*Наша команда*/
 .section-our-crew {
