@@ -70,16 +70,13 @@ body {
 .logo > .second-word-logo {
   color: var(--accent-text-color);
 }
-
-.nav-item > .link {
-  color: var(--title-text-color);
-}
-.site-nav > .nav-item > .current {
-  color: var(--accent-text-color);
-}
 .logo:hover,
 .logo:focus {
   color: var(--accent-text-color);
+}
+.link {
+  list-style: none;
+  text-decoration: none;
 }
 
 /*Site-nav*/
@@ -96,7 +93,10 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   list-style: none;
-  text-decoration: none;
+}
+
+.site-nav > .nav-item > .current {
+  color: var(--accent-text-color);
 }
 
 .link:hover,
@@ -106,7 +106,7 @@ body {
 .site-nav .nav-item:not(:last-child) {
   margin-right: 50px;
 }
-.site-nav .nav-item .link {
+.site-nav > .nav-item > .link {
   padding: 32px 0;
 }
 
@@ -125,23 +125,18 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   list-style: none;
+  text-decoration: none;
 }
+
 .auth-nav .nav-item:not(:last-child) {
   margin-right: 50px;
 }
-.auth-nav .nav-item .link {
+.auth-link {
   padding: 32px 0;
-}
-
-.link {
   color: var(--primary-text-color);
   text-decoration: none;
 }
 
-.link:hover,
-.link:focus {
-  color: var(--accent-text-color);
-}
 /*Hero*/
 .hero {
   text-align: center;
@@ -335,9 +330,6 @@ ul > .link:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.link {
-  list-style: none;
-}
 .address-link {
   font-size: 14px;
   line-height: 1.71;
@@ -352,14 +344,15 @@ ul > .link:not(:last-child) {
 
 /*Portfolio*/
 .our-works {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-
-.list-button {
+.list-button-main {
   margin-bottom: 50px;
   display: flex;
-  justify-content: center;
+}
+.list-button {
+  display: flex;
   margin-right: auto;
   margin-left: auto;
 }
@@ -374,9 +367,10 @@ ul > .link:not(:last-child) {
   cursor: pointer;
   border: none;
   border-radius: 4px;
+  padding: 6px 22px;
 }
 .secondary-button-item:not(:last-child) {
-  padding-right: 8px;
+  margin-right: 8px;
 }
 
 .secondary-button:hover,
@@ -400,9 +394,9 @@ ul > .link:not(:last-child) {
 }
 .work-card-item {
   padding: 20px 24px;
-}
-.all-work-card {
-  border: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .work-name {
