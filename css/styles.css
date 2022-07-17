@@ -70,14 +70,15 @@ body {
 .logo > .second-word-logo {
   color: var(--accent-text-color);
 }
-.logo:hover,
-.logo:focus {
-  color: var(--accent-text-color);
-}
-.site-nav > .nav-item > .link {
+
+.nav-item > .link {
   color: var(--title-text-color);
 }
 .site-nav > .nav-item > .current {
+  color: var(--accent-text-color);
+}
+.logo:hover,
+.logo:focus {
   color: var(--accent-text-color);
 }
 
@@ -149,14 +150,21 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-.main-title {
+.hero-container {
+  text-align: center;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
+}
+.main-title {
   color: var(--color-text-white);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
 }
 .button {
   background-color: var(--accent-text-color);
@@ -170,6 +178,7 @@ body {
   letter-spacing: 0.06em;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
   border-radius: 4px;
   padding: 10px 32px;
 }
@@ -225,6 +234,9 @@ body {
   letter-spacing: 0.03em;
 }
 /*Чем мы занимаемся*/
+.section-doing {
+  padding-bottom: 94px;
+}
 .section-title {
   text-align: center;
   color: var(--title-text-color);
@@ -238,7 +250,6 @@ body {
   margin-right: 30px;
 }
 .doing-list {
-  padding-bottom: 94px;
   display: flex;
 }
 
@@ -287,10 +298,10 @@ body {
   background-color: var(--secondary-background-color);
 }
 .footer-style {
+  width: 1200px;
+  padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
-  padding: 60px 15px;
 }
 .logo-footer {
   display: block;
@@ -302,6 +313,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  padding-top: 60px;
   margin-bottom: 20px;
 }
 .logo-footer > .second-word-logo {
