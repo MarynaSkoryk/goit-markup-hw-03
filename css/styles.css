@@ -250,6 +250,9 @@ body {
 .doing-list-item {
   max-width: 370px;
 }
+img {
+  display: block;
+}
 
 /*Наша команда*/
 .section-our-crew {
