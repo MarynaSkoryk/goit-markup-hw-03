@@ -399,7 +399,7 @@ img {
   gap: 30px;
 }
 .all-work-card {
-  flex-basis: calc((100% / 3) - 60px);
+  flex-basis: calc((100% / 3) - 2 * 30px);
 }
 
 .work-card-item {
