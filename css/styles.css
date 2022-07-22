@@ -39,6 +39,9 @@ body {
   color: var(--primary-text-color);
   margin: 0;
 }
+img {
+  display: block;
+}
 /*Page-Header*/
 .page-header {
   border-bottom: 1px solid #ececec;
@@ -163,6 +166,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+  text-align: center;
 }
 .button {
   background-color: var(--accent-text-color);
@@ -250,9 +254,6 @@ body {
 }
 .doing-list-item {
   max-width: 370px;
-}
-img {
-  display: block;
 }
 
 /*Наша команда*/
@@ -396,6 +397,9 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+.all-work-card {
+  flex-basis: calc((100% / 3) - 60px);
 }
 
 .work-card-item {
